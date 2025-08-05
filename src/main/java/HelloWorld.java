@@ -1,6 +1,6 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        int a = 1;
+        int a = 3;
         int b = 2;
         int c = a * b;
         int d = a + b;
