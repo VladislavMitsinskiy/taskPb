@@ -10,7 +10,7 @@ public class Calculator {
         System.out.println("Введите второе число:");
         double number2 = scanner.nextDouble();
 
-        System.out.println("Введите операцию (+, -, *, /):");
+        System.out.println("Введите операцию (+, -, *, /, %, p):");
         String action = scanner.next();
 
         Operation operation = null;
@@ -27,6 +27,12 @@ public class Calculator {
                 break;
             case "/":
                 operation = new Division();
+                break;
+            case "%":
+                operation = new Modulo();
+                break;
+            case "p":
+                operation = new Percentage();
                 break;
         }
         if (operation != null){
